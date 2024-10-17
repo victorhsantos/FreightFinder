@@ -1,6 +1,9 @@
 using FreightFinder.Application.IoC;
 using BuildingBlocks.Logger.Configurations;
 using BuildingBlocks.Logger.Enums;
+using FreightFinder.Integration.MelhorEnvio.Interfaces;
+using FreightFinder.Integration.MelhorEnvio.Services;
+using MediatR;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddApplication();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IShipmentService, MelhorEnvioService>();
 
 //Logger
 builder.Services

@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BuildingBlocks.Logger\BuildingBlocks.Logger.csproj" />
     <ProjectReference Include="..\FreightFinder.Application\FreightFinder.Application.csproj" />
+    <ProjectReference Include="..\FreightFinder.Integration.MelhorEnvio\FreightFinder.Integration.MelhorEnvio.csproj" />
   </ItemGroup>
 
 </Project>

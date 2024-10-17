@@ -23,6 +23,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreightFinder.UnitTests", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildingBlocks.Logger", "BuildingBlocks.Logger\BuildingBlocks.Logger.csproj", "{82840482-D67F-4063-BB17-07040010D1E6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightFinder.Integration.MelhorEnvio", "FreightFinder.Integration.MelhorEnvio\FreightFinder.Integration.MelhorEnvio.csproj", "{CBCAB2CC-905E-4A01-B85D-F90AE22C95EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{82840482-D67F-4063-BB17-07040010D1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82840482-D67F-4063-BB17-07040010D1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82840482-D67F-4063-BB17-07040010D1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCAB2CC-905E-4A01-B85D-F90AE22C95EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCAB2CC-905E-4A01-B85D-F90AE22C95EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCAB2CC-905E-4A01-B85D-F90AE22C95EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCAB2CC-905E-4A01-B85D-F90AE22C95EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{F3D4F09C-9900-47DD-AE8E-D9810A06C89E} = {07B2A368-2A4F-4A98-B374-83B4F38C28D2}
 		{BA3D84BA-1080-4E23-A312-8D11D38CAA1D} = {2E82FCCC-4EB4-48A7-9499-A5FF073DD841}
 		{82840482-D67F-4063-BB17-07040010D1E6} = {EDEE3402-8C8E-4109-A9B0-CFD9A0D08778}
+		{CBCAB2CC-905E-4A01-B85D-F90AE22C95EB} = {EDEE3402-8C8E-4109-A9B0-CFD9A0D08778}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50D3BAAD-8096-472D-BAB5-9A8A0DBC04DF}
