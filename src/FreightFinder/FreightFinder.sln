@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightFinder.API", "FreightFinder.API\FreightFinder.API.csproj", "{1B8A474F-A583-4CD8-BBB4-3C19CC489096}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Presentation", "01 - Presentation", "{25F387E7-16AE-4371-BE50-24BF80885A2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Application", "02 - Application", "{FD595847-2F5E-436F-A0AB-1BB1EC246D8E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Domain", "03 - Domain", "{07B2A368-2A4F-4A98-B374-83B4F38C28D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Infrastructure", "04 - Infrastructure", "{EDEE3402-8C8E-4109-A9B0-CFD9A0D08778}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Tests", "05 - Tests", "{2E82FCCC-4EB4-48A7-9499-A5FF073DD841}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightFinder.Application", "FreightFinder.Application\FreightFinder.Application.csproj", "{C7785872-2703-472C-AA13-0E627A84A216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightFinder.Domain", "FreightFinder.Domain\FreightFinder.Domain.csproj", "{F3D4F09C-9900-47DD-AE8E-D9810A06C89E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreightFinder.UnitTests", "FreightFinder.UnitTests\FreightFinder.UnitTests.csproj", "{BA3D84BA-1080-4E23-A312-8D11D38CAA1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B8A474F-A583-4CD8-BBB4-3C19CC489096}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8A474F-A583-4CD8-BBB4-3C19CC489096}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8A474F-A583-4CD8-BBB4-3C19CC489096}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8A474F-A583-4CD8-BBB4-3C19CC489096}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7785872-2703-472C-AA13-0E627A84A216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7785872-2703-472C-AA13-0E627A84A216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7785872-2703-472C-AA13-0E627A84A216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7785872-2703-472C-AA13-0E627A84A216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3D4F09C-9900-47DD-AE8E-D9810A06C89E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D4F09C-9900-47DD-AE8E-D9810A06C89E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D4F09C-9900-47DD-AE8E-D9810A06C89E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D4F09C-9900-47DD-AE8E-D9810A06C89E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA3D84BA-1080-4E23-A312-8D11D38CAA1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA3D84BA-1080-4E23-A312-8D11D38CAA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA3D84BA-1080-4E23-A312-8D11D38CAA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA3D84BA-1080-4E23-A312-8D11D38CAA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1B8A474F-A583-4CD8-BBB4-3C19CC489096} = {25F387E7-16AE-4371-BE50-24BF80885A2C}
+		{C7785872-2703-472C-AA13-0E627A84A216} = {FD595847-2F5E-436F-A0AB-1BB1EC246D8E}
+		{F3D4F09C-9900-47DD-AE8E-D9810A06C89E} = {07B2A368-2A4F-4A98-B374-83B4F38C28D2}
+		{BA3D84BA-1080-4E23-A312-8D11D38CAA1D} = {2E82FCCC-4EB4-48A7-9499-A5FF073DD841}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50D3BAAD-8096-472D-BAB5-9A8A0DBC04DF}
+	EndGlobalSection
+EndGlobal

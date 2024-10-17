@@ -1,0 +1,6 @@
+@FreightFinder.API_HostAddress = http://localhost:5199
+
+GET {{FreightFinder.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
