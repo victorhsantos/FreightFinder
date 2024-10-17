@@ -1,11 +1,22 @@
+using FreightFinder.Application.IoC;
+using BuildingBlocks.Logger.Configurations;
+using BuildingBlocks.Logger.Enums;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApplication();
 builder.Services.AddSwaggerGen();
+
+//Logger
+builder.Services
+    .AddBuildinBlocksLogging()
+    .SetLogLevel(BBLogLevel.Information)
+    .UseObfuscateSensiteData()
+    .WithConsoleOutput();
 
 var app = builder.Build();
 
