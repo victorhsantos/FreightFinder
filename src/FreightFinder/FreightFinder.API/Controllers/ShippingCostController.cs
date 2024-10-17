@@ -26,7 +26,7 @@ namespace FreightFinder.API.Controllers
             try
             {
                 var response = await _mediator.Send(new ShippingCalculationCommand(request, context));
-                return Ok(response);
+                return Ok(response.Shippings);
             }
             catch (Exception ex)
             {

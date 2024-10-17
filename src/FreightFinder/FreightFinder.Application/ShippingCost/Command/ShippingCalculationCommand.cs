@@ -1,4 +1,5 @@
-﻿using FreightFinder.Application.DTOs;
+﻿using AutoMapper;
+using FreightFinder.Application.DTOs;
 using FreightFinder.Integration.MelhorEnvio.Interfaces;
 using FreightFinder.Integration.MelhorEnvio.Models;
 using MediatR;
@@ -10,21 +11,31 @@ namespace FreightFinder.Application.ShippingCost.Command
     public class ShippingCalculationHandler : IRequestHandler<ShippingCalculationCommand, ShippingCalculationResponseDTO>
     {
         private readonly IShipmentService _shipmentService;
+        private readonly IMapper _mapper;
 
-        public ShippingCalculationHandler(IShipmentService shipmentService)
+        public ShippingCalculationHandler(IShipmentService shipmentService, IMapper mapper)
         {
             _shipmentService = shipmentService;
+            _mapper = mapper;
         }
 
-        public async Task<ShippingCalculationResponseDTO> Handle(ShippingCalculationCommand request, CancellationToken cancellationToken)
+        public async Task<ShippingCalculationResponseDTO> Handle(ShippingCalculationCommand command, CancellationToken cancellationToken)
         {
-            var teste = _shipmentService.CalculateShippingAsync(new ShipmentRequest
-            {
-                from = "30620410",
-                to = "30642140"               
-            });
+            var response = new ShippingCalculationResponseDTO { Shippings = new List<ShippingCalculationDetails>() };
 
-            return new ShippingCalculationResponseDTO();
+            try
+            {
+                var calculateShippingRequest = _mapper.Map<ShipmentRequest>(command.Request);
+                var shippingsCoast = await _shipmentService.CalculateShippingAsync(calculateShippingRequest);
+                shippingsCoast.ForEach(shipping => response.Shippings.Add(_mapper.Map<ShippingCalculationDetails>(shipping)));
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+            return response;
+
         }
     }
 }
